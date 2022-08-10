@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <link href="css/styles.css" rel="stylesheet">
+       
+      <h1 id="title" class="text-center">My Survey Form</h1>
+      <p id="description" class="text-center">Thanks for compleete this important Form</p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+      <label id="email-label" for="name">Email</label>
+      <input type="email" min="10" max="99" name="email" id="email" class="form-control" placeholder="Enter your email" required="">
+      <label id="number-label" for="name">Number</label>  
+      <input type="number" min="10" max="999999999999" name="number" id="number" class="form-control" placeholder="Enter your number" required=""> 
+      <select id="dropdown" name="role" class="form-control" required="">
+            <option disabled="" selected="" value="">Select Profession</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+      </select>
+      <label>
+            <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Definitely</label>
+            <label>
+            <input name="user-recommend" value="maybe" type="radio" class="input-radio">No definitely</label>
+
+            <p>
+            What is more important for you?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+          <label><input name="level" value="Primary-school" type="checkbox" class="input-checkbox">Primary School</label>
+          <label><input name="level" value="Secondary-school" type="checkbox" class="input-checkbox">Secondary School</label>
+          <label><input name="level" value="University-school" type="checkbox" class="input-checkbox">University School</label>
+          <label><input name="level" value="Master-degree" type="checkbox" class="input-checkbox">Master Degree</label>
+
+          <div class="form-group">
+          <p>Please wirte here any comments</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comments here...">
+          </textarea>
+
+          <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+        </div>
+
+    </div>
+
+  </form>
+</html>
